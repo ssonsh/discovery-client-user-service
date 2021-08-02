@@ -1,0 +1,14 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: user-service
+
+
+eureka:
+  client:
+    register-with-eureka: true # 유레카 서버에 등록하겠다 !
+    fetch-registry: true # 외부 검색 가능토록 설정
+    service-url: # 유레카 경로 설정!
+      defaultZone: http://127.0.0.1:8761/eureka # 유레카 디스커버리 서버의 endpoint
